@@ -92,4 +92,9 @@ class TitleSearchStrategy implements SearchStrategy {
         }
         return filteredMediaList;
     }
+
+    // Interfaz para la fábrica de medios digitales
+    static interface MediaFactory {
+        Media createMedia();
+    }
 }
